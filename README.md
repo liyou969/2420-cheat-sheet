@@ -75,7 +75,10 @@ print("The p_value is ",p_value)
 
 print("R square: ", corr * corr)
 
+p_value: This is the p-value associated with that correlation. The p-value gives the probability of observing the current data, or something more extreme, when there's no actual correlation present. Typically:
 
+If the p-value is less than a predetermined significance level (e.g., 0.05), we might reject the null hypothesis of "no correlation between the two variables," believing the relationship between them to be statistically significant.
+If the p-value is larger, we do not reject the null hypothesis, implying that we don't have sufficient evidence to suggest a statistically significant relationship between the variables.
 
 #T-test
 '''
