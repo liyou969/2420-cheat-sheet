@@ -107,7 +107,7 @@ p-value is larger than 0.05 so it is out of the rejection region,
 thus we can not reject the null hypothesis and decide that the  is equivalent between  and .
 
 
-#画图sns
+# 画图sns
 
 Line Plot: trends and relationships of continuous variables, such as time series data or variables changing with a parameter.
 
@@ -144,3 +144,36 @@ sns.boxplot(data=data)
 sns.heatmap(data, cmap='YlGnBu', annot=True, fmt='.2f')
 
 sns.violinplot(x=x, y=y,hue='')
+
+
+# date
+#start of week2
+start='2023-02-27'
+
+#end of week2
+end='2023-03-03'
+
+#create a new column in dataframe to record the date of each row
+SeaIce["Date"] = pd.to_datetime(SeaIce[["Year","Month","Day"]])
+
+
+is_date = (SeaIce['Date'] >= start) & (SeaIce["Date"] <= end)
+
+# plot more than one graph in one pic
+
+x = SeaIce["Date"]
+y = SeaIce["Extent(Antarctic)"]
+z = SeaIce["Extent(Arctic)"]
+
+plt.plot(x,y,label="Antarctic")
+plt.plot(x,z,label="Arctic")
+
+plt.xlabel("Date")
+plt.ylabel("Sea Ice extents(10^6 sq km)")
+plt.title("Daily trend of the Antarctic and Arctic sea ice extents")
+
+plt.legend()
+plt.show()
+
+
+
