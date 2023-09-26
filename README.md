@@ -14,6 +14,9 @@ import matplotlib.pyplot as plt
 
 import seaborn as sns
 
+# output
+df.to_excel('output.xlsx', index=False, engine='openpyxl')
+
 # boxplot
 df = pd.read_excel('a.xlsx')
 
