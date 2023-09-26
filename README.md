@@ -102,3 +102,42 @@ The p-value is below 0.05, so reject the null hypothesis: the means of both ... 
 p-value is larger than 0.05 so it is out of the rejection region, 
 
 thus we can not reject the null hypothesis and decide that the  is equivalent between  and .
+
+
+#画图sns
+
+Line Plot: trends and relationships of continuous variables, such as time series data or variables changing with a parameter.
+
+Scatter Plot: relationship between two continuous variables, helping to observe correlations or distributions between variables.
+如果你想展示变量之间的关系(强)和趋势，散点图可能更合适；如果你想展示一个变量随着另一个变量的变化而变化的趋势，折线图可能更适合。
+
+！Bar Plot: plt.bar()适用于比较不同类别或组之间的离散数据。
+plt.hist()适用于展示连续变量的分布情况。
+
+Histogram: display the distribution of numerical data, helping to understand the central tendency and dispersion of the data.
+
+Box Plot:display the distribution of numerical data, including median, quartiles, and outliers, allowing the observation of outliers and distribution shapes.
+
+Heatmap: Used to show the relationship between two categorical variables, often using colors to represent the degree of association or frequency.
+
+Violin Plot: Combines the features of a box plot and a kernel density plot, used to display the distribution and density of numerical data.
+
+Categorical Plot: Includes bar plots, count plots, box plots, etc., used to display data distribution and relationships between different categories.
+'''
+#hue for different lines
+sns.lineplot(x = '', y='', hue = '' , data=q3q4_df)
+sns.lineplot(x=x, y=y)
+plt.title('')
+plt.show()
+
+sns.scatterplot(x=x, y=y)
+
+sns.barplot(x=x, y=y)
+
+sns.histplot(data)
+
+sns.boxplot(data=data)
+
+sns.heatmap(data, cmap='YlGnBu', annot=True, fmt='.2f')
+
+sns.violinplot(x=x, y=y,hue='')
