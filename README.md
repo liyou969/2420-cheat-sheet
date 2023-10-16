@@ -61,7 +61,6 @@ print("The result of two sample test's is", t1)
 
 print("The result of two sample test's p value is", p1)
 
-# 统计测试
 
 #correlation
 
@@ -93,7 +92,6 @@ A large t-score tells you that the groups are different.
 
 A small t-score tells you that the groups are similar.
 
-用p value 判断是否reject
 '''
 
 T test performs a hypothesis test for the mean between two independent groups of scores 
@@ -118,12 +116,12 @@ p-value is larger than 0.05 so it is out of the rejection region,
 thus we can not reject the null hypothesis and decide that the  is equivalent between  and .
 
 
-# 画图sns
+# sns
 
 Line Plot: trends and relationships of continuous variables, such as time series data or variables changing with a parameter.
 
 Scatter Plot: relationship between two continuous variables, helping to observe correlations or distributions between variables.
-如果你想展示变量之间的关系(强)和趋势，散点图可能更合适；如果你想展示一个变量随着另一个变量的变化而变化的趋势，折线图可能更适合。
+
 
 ！Bar Plot: plt.bar()适用于比较不同类别或组之间的离散数据。
 plt.hist()适用于展示连续变量的分布情况。
